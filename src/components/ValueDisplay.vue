@@ -62,4 +62,9 @@ export default {
   list-style: none;
 }
 
+#valueDisplay p {
+  color:blue;
+  cursor: pointer;
+}
+
 </style>
