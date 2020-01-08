@@ -25,7 +25,6 @@ export default {
   },
   methods: {
     onClickChild(data) {
-      alert('TEST');
       this.$emit('clicked', data);
     }
   }

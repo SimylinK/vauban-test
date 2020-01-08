@@ -39,12 +39,15 @@ export default {
     this.characters = characters;
   },
   methods: {
-    onChange(event) {
+    selectEntry(url) {
       var divsToHide = document.getElementsByClassName("li-character"); //divsToHide is an array
       for(var i = 0; i < divsToHide.length; i++){
         divsToHide[i].style.display = "none"; // depending on what you're doing
       }
-      document.getElementById(event.target.value).style.display = "block";
+      document.getElementById(url).style.display = "block";
+    },
+    onChange(event) {
+      this.selectEntry(event.target.value);
     },
     onClickChild(data) {
       characters.push(data) ;

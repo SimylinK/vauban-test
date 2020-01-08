@@ -33,9 +33,7 @@ export default {
   },
   methods: {
     displayObject(data) {
-      alert(data);
-
-      this.$emit('clicked', 'data');
+      this.$emit('clicked', data);
     },
     apiCall(url, callback) {
       // Create a request variable and assign a new XMLHttpRequest object to it.
